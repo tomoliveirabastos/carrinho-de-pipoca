@@ -20,7 +20,7 @@ void loop()
     const char *json = "{\"direcao\":\"para_direita\",\"sentido\": \"frente\"}";
 
     if (Serial.available())
-    {    
+    {
         auto document = new Document(json);
     }
 }
