@@ -33,6 +33,11 @@ void MotorL290N::run_back()
     delay(this->DELAY);
 }
 
+int MotorL290N::get_delay()
+{
+    return this->DELAY;
+}
+
 void MotorL290N::run_forward()
 {
     digitalWrite(this->IN1, HIGH);

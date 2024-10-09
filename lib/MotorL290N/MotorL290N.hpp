@@ -6,7 +6,7 @@ class MotorL290N
 
 private:
     char *DIRECAO;
-    int SPEED = 100;
+    int SPEED = 150;
     int DELAY = 1000;
     int IN1 = 11;
     int IN2 = 9;
@@ -16,6 +16,7 @@ private:
     int ENB = 5;
 
 public:
+    int get_delay();
     void motor_setup();
     char *get_direction();
     void set_direction(char *direction);

@@ -1,21 +1,12 @@
 #pragma once
 #include "Document.hpp"
 
-Document::Document(const char *j)
+void Document::set_direcao(const char *d)
 {
-    JsonDocument doc;
-    deserializeJson(doc, j);
-
-    this->direcao = doc["direcao"];
-    this->sentido = doc["sentido"];
+    this->direcao = d;
 }
 
-char *Document::get_direcao()
+const char *Document::get_direcao()
 {
     return this->direcao;
-}
-
-char *Document::get_sentido()
-{
-    return this->sentido;
 }

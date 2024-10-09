@@ -4,12 +4,9 @@
 class Document
 {
 private:
-    char *direcao = "para_frente";
-    char *sentido = "para_frente";
+    const char *direcao;
 
 public:
-    Document(const char *jsonString);
-    Document *load_json(char *json);
-    char *get_direcao();
-    char *get_sentido();
+    void set_direcao(const char *);
+    const char *get_direcao();
 };
